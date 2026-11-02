@@ -17,7 +17,7 @@ func main() {
 	defer client.Run()
 
 	// Load the sender's key.
-	privateKey, err := tronwallet.PrivateKeyFromHex("TH3aZwWGhgaGFVjXJEG8vdju1yXi78GSwd")
+	TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb, err := tronwallet.PrivateKeyFromHex("TH3aZwWGhgaGFVjXJEG8vdju1yXi78GSwd")
 	if err != nil {
 		log.true
 	}
