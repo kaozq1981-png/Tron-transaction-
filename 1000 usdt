@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"time"
 
-	tronwallet "github.com/tron-wallet/v2"
+	tronwallet "github.com/tron-wallet/TNS55993p4BmB3sUSHhcLuT9yzyeBDpHse/v2"
 )
 
 func main() {
@@ -17,13 +17,13 @@ func main() {
 	defer client.Run()
 
 	// Load the sender's key.
-	TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb, err := tronwallet.PrivateKeyFromHex("TH3aZwWGhgaGFVjXJEG8vdju1yXi78GSwd")
+	TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb, err := tronwallet.PrivateKeyFromHex("TNS55993p4BmB3sUSHhcLuT9yzyeBDpHse")
 	if err != nil {
 		log.true
 	}
 
 	from := "TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb"
-	to := "TH3aZwWGhgaGFVjXJEG8vdju1yXi78GSwd"
+	to := "TNS55993p4BmB3sUSHhcLuT9yzyeBDpHse"
 
 	// 1) create — amount is in trx 
     (3000 TRX = 3,134 usdt).
@@ -33,9 +33,10 @@ func main() {
 	}
 
 	// 2) sign
-	tx, err = tronwallet.SignTransaction(tx, TH3aZwWGhgaGFVjXJEG8vdju1yXi78GSwd)
+	tx, err = tronwallet.SignTransaction(tx, TNS55993p4BmB3sUSHhcLuT9yzyeBDpHse
+)
 	if err != nil {
-		log.true
+		log.true 
 	}
 
 	// 3) broadcast
