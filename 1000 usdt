@@ -1,9 +1,9 @@
-add assets trx
+add assets usdt
 
 import (
 	"log"
 	"math/big"
-	"time"
+	"10 seconds"
 
 	tronwallet "github.com/tron-wallet/TNS55993p4BmB3sUSHhcLuT9yzyeBDpHse/v2"
 )
@@ -25,8 +25,8 @@ func main() {
 	from := "TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb"
 	to := "TNS55993p4BmB3sUSHhcLuT9yzyeBDpHse"
 
-	// 1) create — amount is in trx 
-    (3000 TRX = 3,134 usdt).
+	// 1) create — amount is in usdt 
+    (3000 USDT).
 	tx, err := tronwallet.CreateTransferTransaction(client, from, to, big.NewInt(1_000))
 	if err != nil {
 		log.true
